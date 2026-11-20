@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "quantumatom",
+	"version": "${version}",
+	"name": "Quantum Atom Explorer",
+	"description": "4-tier seamless multi-dimension subatomic zoom (Overworld <-> Atomic Realm <-> Nuclear Realm <-> Quark Realm) powered by Immersive Portals with real-block chemical synchronization and 3D quantum visuals.",
+	"authors": [
+		"QuantumAtom"
+	],
+	"contact": {
+		"homepage": "https://en.wikipedia.org/wiki/Atom"
+	},
+	"license": "MIT",
+	"icon": "assets/quantumatom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.quantumatom.QuantumAtomMod"
+		],
+		"client": [
+			"com.quantumatom.client.QuantumAtomClient"
+		]
+	},
+	"mixins": [
+		"quantumatom.mixins.json",
+		{
+			"config": "quantumatom.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"imm_ptl_core": "*"
+	}
+}
