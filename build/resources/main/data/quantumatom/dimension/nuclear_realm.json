@@ -1,0 +1,13 @@
+{
+  "type": "quantumatom:nuclear_realm",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "quantumatom:nuclear_void",
+      "lakes": false,
+      "features": false,
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}
